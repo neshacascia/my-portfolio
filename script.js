@@ -33,6 +33,7 @@ function submitForm(e) {
   nameError.textContent = '';
   emailError.textContent = '';
   messageError.textContent = '';
+  successMessage.textContent = '';
 
   const name = document.forms['contactForm']['name'].value;
   const email = document.forms['contactForm']['email'].value;
@@ -58,6 +59,10 @@ function submitForm(e) {
 
   if (isValid) {
     successMessage.textContent = 'Form submitted successfully!';
+
+    setTimeout(() => {
+      successMessage.classList.add('hide');
+    }, 2500);
 
     nameInput.value = '';
     emailInput.value = '';

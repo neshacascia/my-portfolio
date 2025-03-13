@@ -157,6 +157,10 @@ button[type='submit'] {
   font-size: 14px;
 }
 
+#success-message.hide {
+  display: none;
+}
+
 footer {
   position: fixed;
   bottom: 0;
