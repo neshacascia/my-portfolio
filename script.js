@@ -41,7 +41,7 @@ function submitForm(e) {
     isValid = false;
   }
 
-  if (email.trim() === '' || validateEmail(email)) {
+  if (email.trim() === '' || !validateEmail(email)) {
     emailError.textContent = 'Please enter a valid email address.';
     isValid = false;
   }
