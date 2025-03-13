@@ -1,3 +1,7 @@
+:root {
+  --gradient: linear-gradient(90deg, #9f7474 0%, #e0adad 50%, #f3d7d7 100%);
+}
+
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
@@ -13,6 +17,16 @@ footer {
   color: white;
   padding: 20px;
   text-align: center;
+}
+
+#typed-element {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 nav ul {

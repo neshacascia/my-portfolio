@@ -5,12 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <script defer src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <title>My Portfolio</title>
   </head>
   <body>
     <!-- Header Section -->
     <header>
       <h1>Nesha Mervin</h1>
+      <span id="typed-element"></span>
+      <script>
+        var typed = new Typed('#typed-element', {
+          strings: [
+            'Designer',
+            'Creator',
+            'Lifelong Learner',
+            'Software Developer',
+          ],
+          typeSpeed: 60,
+        });
+      </script>
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
