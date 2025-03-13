@@ -107,7 +107,6 @@ input[type='email'] {
 textarea {
   all: unset;
   width: 600px;
-  margin-bottom: 20px;
 }
 
 input[type='text'],
@@ -130,6 +129,18 @@ button[type='submit'] {
   width: 250px;
   border-radius: 10px;
   padding: 12px 32px;
+  margin-top: 20px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  padding-bottom: 8px;
+}
+
+#success-message {
+  color: green;
+  font-size: 14px;
 }
 
 footer {
