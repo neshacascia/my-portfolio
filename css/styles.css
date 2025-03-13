@@ -74,7 +74,8 @@ button {
   padding: 12px 32px;
 }
 
-.project-button:hover {
+.project-button:hover,
+button[type='submit']:hover {
   background-color: #9b8181;
   cursor: pointer;
 }
@@ -85,6 +86,50 @@ button {
 
 #contact {
   margin-bottom: 120px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: 600;
+  line-height: 24px;
+}
+
+input[type='text'],
+input[type='email'] {
+  width: 350px;
+}
+
+textarea {
+  all: unset;
+  width: 600px;
+  margin-bottom: 20px;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  font-size: 15px;
+  border: 1px solid rgb(58, 58, 61);
+  border-radius: 4px;
+  padding: 10px 10px;
+  margin-top: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+button[type='submit'] {
+  color: #fff;
+  background-color: #746262;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 250px;
+  border-radius: 10px;
+  padding: 12px 32px;
 }
 
 footer {
