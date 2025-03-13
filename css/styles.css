@@ -47,6 +47,20 @@ h2 {
   color: #333;
 }
 
+.project-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project {
+  width: 350px;
+  padding-bottom: 30px;
+}
+
+.project img {
+  width: 350px;
+}
+
 #contact {
   margin-bottom: 120px;
 }
