@@ -8,4 +8,10 @@ projectBtns.forEach((btn, ind) =>
 function toggleProjectDetails(e, ind) {
   const selectedProject = projectDetails[ind];
   selectedProject.classList.toggle('hide');
+
+  if (!selectedProject.classList.contains('hide')) {
+    projectBtns[ind].innerHTML = 'Hide Details';
+  } else {
+    projectBtns[ind].innerHTML = 'Show Details';
+  }
 }
