@@ -2,6 +2,10 @@ const projectBtns = document.querySelectorAll('.project-button');
 const projectDetails = document.querySelectorAll('.project-details');
 
 const form = document.querySelector('form');
+const nameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+const messageInput = document.querySelector('#message');
+
 const nameError = document.querySelector('#name-error');
 const emailError = document.querySelector('#email-error');
 const messageError = document.querySelector('#message-error');
@@ -54,6 +58,10 @@ function submitForm(e) {
 
   if (isValid) {
     successMessage.textContent = 'Form submitted successfully!';
+
+    nameInput.value = '';
+    emailInput.value = '';
+    messageInput.value = '';
   }
 }
 
