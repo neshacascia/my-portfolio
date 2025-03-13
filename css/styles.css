@@ -74,6 +74,11 @@ button {
   padding: 12px 32px;
 }
 
+.project-button:hover {
+  background-color: #9b8181;
+  cursor: pointer;
+}
+
 .project-details.hide {
   display: none;
 }
